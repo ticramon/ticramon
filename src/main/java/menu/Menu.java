@@ -3,7 +3,7 @@
  * @author Ramón Méndez García
  */
 
-package formularios;
+package menu;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

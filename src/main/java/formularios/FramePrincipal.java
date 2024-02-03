@@ -6,6 +6,7 @@
 package formularios;
 
 
+import menu.Menu;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

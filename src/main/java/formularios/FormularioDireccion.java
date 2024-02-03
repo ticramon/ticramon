@@ -55,8 +55,15 @@ public class FormularioDireccion extends JPanel {
         setBackground(Color.darkGray);
         setLayout(null);
         
+        
+        
         add(labelTipoCalle);
         add(comboboxTipoCalle);
+        comboboxTipoCalle.addItem("");
+        comboboxTipoCalle.addItem("Calle");
+        comboboxTipoCalle.addItem("Avenida");
+        comboboxTipoCalle.addItem("Boulevard");
+        comboboxTipoCalle.addItem("Callejon");
         add(labelCalle);
         add(textoNombreCalle);
         add(labelNumeroExteriorCalle);
@@ -67,6 +74,13 @@ public class FormularioDireccion extends JPanel {
         add(textoAdicionalDomicilio);
         add(labelTipoComunidad);
         add(comboboxTipoComunidad);
+        comboboxTipoComunidad.addItem("");
+        comboboxTipoComunidad.addItem("Rancho");
+        comboboxTipoComunidad.addItem("Colonia");
+        comboboxTipoComunidad.addItem("Barrio");
+        comboboxTipoComunidad.addItem("Pueblo");
+        comboboxTipoComunidad.addItem("Hacienda");
+        comboboxTipoComunidad.addItem("Ejido");
         add(labelNombreComunidad);
         add(textoNombreComunidad);
         add(labelCodigoPostal);
