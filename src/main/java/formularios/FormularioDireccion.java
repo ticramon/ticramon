@@ -13,6 +13,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -185,6 +187,17 @@ public class FormularioDireccion extends JPanel {
         textoReferenciasAdicionales.setBounds(260,130,240,20);
         
         switchButton.setBounds(10, 160, 490, 20);
+        
+        // Add KeyListener to the textoOcupacion field
+        textoReferenciasAdicionales.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    // Trigger the button's action when Enter is pressed
+                    switchButton.doClick();
+                }
+            }
+        });
         
         switchButton.addActionListener(new ActionListener() {
             @Override

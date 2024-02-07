@@ -6,7 +6,6 @@
 package login;
 
 public class Usuario {
-
     private String nombreUsuario;
     private String contraseña;
 

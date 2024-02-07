@@ -15,7 +15,7 @@ public class Menu extends JPanel{
     private JPanel cardPanel;
 
     JButton botonPersona = new JButton("Personas");
-    JButton botonDireccion = new JButton("Domicilio");
+    JButton botonBusqueda = new JButton("Busqueda");
     JButton botonContacto = new JButton("Contacto");
     JButton botonGenerarClave = new JButton("Generar clave");
     JButton botonSalir = new JButton("Salir");
@@ -31,15 +31,15 @@ public class Menu extends JPanel{
         setLayout(new GridLayout(0, 1));
         
         add(botonPersona);
-        add(botonDireccion);
+        add(botonBusqueda);
         add(botonContacto);
         add(botonGenerarClave);
         add(botonSalir);
         
         botonPersona.setForeground(Color.decode("#009d71"));
         botonPersona.setBackground(Color.WHITE);
-        botonDireccion.setForeground(Color.decode("#009d71"));
-        botonDireccion.setBackground(Color.WHITE);
+        botonBusqueda.setForeground(Color.decode("#009d71"));
+        botonBusqueda.setBackground(Color.WHITE);
         botonContacto.setForeground(Color.decode("#009d71"));
         botonContacto.setBackground(Color.WHITE);
         botonGenerarClave.setForeground(Color.decode("#009d71"));
@@ -51,7 +51,7 @@ public class Menu extends JPanel{
         add(Box.createVerticalGlue()); // Top alignment
         add(botonPersona);
         add(Box.createVerticalStrut(20)); // Spacing between buttons
-        add(botonDireccion);
+        add(botonBusqueda);
         add(Box.createVerticalStrut(20)); // Spacing between buttons
         add(botonContacto);
         add(Box.createVerticalStrut(20)); // Spacing between buttons
@@ -62,7 +62,7 @@ public class Menu extends JPanel{
         
         
         botonPersona.setPreferredSize(new Dimension(150, 10));
-        botonDireccion.setPreferredSize(new Dimension(150, 10));
+        botonBusqueda.setPreferredSize(new Dimension(150, 10));
         botonContacto.setPreferredSize(new Dimension(150, 10));
         botonGenerarClave.setPreferredSize(new Dimension(150, 10));
         botonSalir.setPreferredSize(new Dimension(150, 10));
@@ -75,7 +75,7 @@ public class Menu extends JPanel{
             }
         });
         
-        botonDireccion.addActionListener(new ActionListener() {
+        botonBusqueda.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 cardLayout.show(cardPanel, "direccion");

@@ -10,6 +10,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -162,9 +164,19 @@ public class FormularioPersona extends JPanel{
         labelOficioProfesion.setBounds(10, 130, 80, 20);
         textoOcupacion.setBounds(100, 130, 400, 20);
         
-        
         botonAgregarPersona.setBounds(10, 160, 490, 20);
         
+        
+        // Add KeyListener to the textoOcupacion field
+        textoOcupacion.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    // Trigger the button's action when Enter is pressed
+                    botonAgregarPersona.doClick();
+                }
+            }
+        });
         
         botonAgregarPersona.addActionListener(new ActionListener() {
             @Override

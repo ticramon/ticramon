@@ -5,9 +5,12 @@ personas/FormularioAgregarPersona.class
 elementosAdicionales/ControladorCuentaRegresiva.class
 db/ConexionDB.class
 personas/FormularioAgregarPersona$2.class
+formularios/FormularioDireccion$5.class
+formularios/FormularioContacto$1.class
 login/ModeloUsuario.class
 login/VistaLogin$2.class
 formularios/FormularioDireccion.class
+formularios/FormularioPersona$4.class
 formularios/FormularioPersona.class
 formularios/FormularioContacto.class
 formularios/FormularioDireccion$2.class
