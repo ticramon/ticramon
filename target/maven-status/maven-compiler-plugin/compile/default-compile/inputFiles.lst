@@ -1,7 +1,6 @@
 /home/ramonmg/NetBeansProjects/ticramon/src/main/java/menu/Menu.java
 /home/ramonmg/NetBeansProjects/ticramon/src/main/java/tablas/ConsultaSQL.java
 /home/ramonmg/NetBeansProjects/ticramon/src/main/java/login/Usuario.java
-/home/ramonmg/NetBeansProjects/ticramon/src/main/java/login/LoginController.java
 /home/ramonmg/NetBeansProjects/ticramon/src/main/java/formularios/FormularioDireccion.java
 /home/ramonmg/NetBeansProjects/ticramon/src/main/java/elementosAdicionales/CuentaRegresiva.java
 /home/ramonmg/NetBeansProjects/ticramon/src/main/java/personas/Personas.java
@@ -9,6 +8,7 @@
 /home/ramonmg/NetBeansProjects/ticramon/src/main/java/formularios/FramePrincipal.java
 /home/ramonmg/NetBeansProjects/ticramon/src/main/java/com/ticramon/ticramon/Ticramon.java
 /home/ramonmg/NetBeansProjects/ticramon/src/main/java/login/ModeloUsuario.java
+/home/ramonmg/NetBeansProjects/ticramon/src/main/java/login/ControladorLogin.java
 /home/ramonmg/NetBeansProjects/ticramon/src/main/java/db/ConexionDB.java
 /home/ramonmg/NetBeansProjects/ticramon/src/main/java/personas/FormularioAgregarPersona.java
 /home/ramonmg/NetBeansProjects/ticramon/src/main/java/formularios/FormularioContacto.java

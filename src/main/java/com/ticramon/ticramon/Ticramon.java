@@ -8,7 +8,7 @@ import db.ConexionDB;
 import java.sql.Connection;
 import java.sql.SQLException;
 import javax.swing.JFrame;
-import login.LoginController;
+import login.ControladorLogin;
 import login.ModeloUsuario;
 import login.VistaLogin;
 
@@ -24,7 +24,7 @@ public class Ticramon {
             Connection conexionDB = ConexionDB.getConnection();
             ModeloUsuario modelo = new ModeloUsuario(conexionDB);
             VistaLogin vista = new VistaLogin();
-            LoginController controlador = new LoginController(vista, modelo);
+            ControladorLogin controlador = new ControladorLogin(vista, modelo);
 
             // Set up the login view
             vista.setVisible(true);

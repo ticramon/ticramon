@@ -213,7 +213,17 @@ public class FormularioDireccion extends JPanel {
                 }
             }
         });
-
+        
+        comboBoxEstado.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                if (e.getStateChange() == ItemEvent.SELECTED) {
+                    // When a category is selected, update the subcategories in the second combo box
+                    actualizarCiudades((String) comboBoxEstado.getSelectedItem());
+                }
+            }
+        });
+        
     }
     
     private void llenarComboboxContinentes() {
@@ -282,7 +292,30 @@ public class FormularioDireccion extends JPanel {
             e.printStackTrace();
         }
     }
-
+    
+    
+    private void actualizarCiudades(String estadoSeleccionado) {
+        comboBoxCiudad.removeAllItems();
+        try {
+            Class.forName("org.mariadb.jdbc.Driver");
+            try (Connection connection = ConexionDB.getConnection()) {
+                String query = "SELECT c.nombreCiudad \n" +
+                "FROM ciudades c  INNER JOIN estados e on c.idEstado = e.idEstado \n" +
+                "WHERE e.nombreEstado = ? ORDER BY c.nombreCiudad";
+                try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+                    preparedStatement.setString(1, estadoSeleccionado);
+                    try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                        while (resultSet.next()) {
+                            comboBoxCiudad.addItem(resultSet.getString("nombreCiudad"));
+                        }
+                    }
+                }
+            }
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    
 }
 
 

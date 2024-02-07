@@ -148,6 +148,13 @@ public class FormularioPersona extends JPanel{
         
         labelEstadoCivil.setBounds(10, 100, 110, 20);
         comboboxEstadoCivil.setBounds(130, 100, 110, 20);
+        comboboxEstadoCivil.addItem("Soltero");
+        comboboxEstadoCivil.addItem("Casado");
+        comboboxEstadoCivil.addItem("Divorciado");
+        comboboxEstadoCivil.addItem("Viudo");
+        comboboxEstadoCivil.addItem("Union libre");
+        comboboxEstadoCivil.addItem("Separado");
+        comboboxEstadoCivil.addItem("En una relacion / comprometido");
         labelSituacionLaboral.setBounds(250, 100, 90, 20);
         checkBoxEstudio.setBounds(350, 100, 70, 20);
         checkBoxTrabajo.setBounds(430, 100, 70, 20);

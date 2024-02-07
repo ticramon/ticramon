@@ -4,14 +4,14 @@
  */
 package db;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-
 /**
  *
  * @author ramonmg
  */
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 // Clase para la conexion a bases de datos
 public class ConexionDB {
     
